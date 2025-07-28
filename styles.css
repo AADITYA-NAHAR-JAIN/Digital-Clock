@@ -4,14 +4,33 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
 body {
-    background-color: #2c3e50;
+    background: radial-gradient(circle at center, #f5f5dc, #e6e2c3, #dcd9b8);
     font-family: 'Arial', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    color: #000;
+    text-shadow: none;
+}
+
+.clock {
+    font-family: 'Orbitron', monospace, 'Arial', sans-serif;
+    position: relative;
+}
+
+#circularClock {
+    background-color: #000;
+    border-radius: 50%;
+    box-shadow:
+        0 0 20px #00ffea,
+        inset 0 0 30px #00ffea;
+    display: block;
+    margin: 0 auto 20px auto;
 }
 
 .clock h1 {
@@ -26,7 +45,38 @@ body {
 .clock {
     text-align: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
+}
+
+#date {
+    font-size: 40px;
+    color: #000000;
+    margin-top: 10px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#time {
+    transition: all 0.5s ease-in-out;
+    color: #000000;
+    text-shadow: none;
+}
+
+.clock {
+    background: radial-gradient(circle at center, #f5f5dc, #e6e2c3, #dcd9b8);
+    padding: 40px 80px;
+    border-radius: 30px;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.clock:hover {
+    box-shadow: 0 0 50px rgba(0, 255, 255, 0.8);
 }
