@@ -26,7 +26,7 @@ The application features a neon blue analog clock on a black circular canvas wit
 
 ## Author
 
-Created by [Your Name]
+Created by Aaditya Nahar Jain
 
 ## License
 
